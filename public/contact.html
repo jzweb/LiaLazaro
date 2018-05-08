@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LIA LAZARO</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Lia Lazaro profesional Stylist. Contact details email and Instagram ">
+    <meta name="keywords" content="Conctact, Styling, Phone, Lia Lazaro, Email, Instagram">
+    <meta name="author" content="Jorge Zevallos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style-contact.css">
+	<script src="js/functions.js"></script>
+	<script src="js/mail.js"></script>
+	
+</head>
+<body>
+	<div class="contenedor">
+
+		<nav>
+			<div class="brand col-md-4">
+				<label><a href="index.html">LIA LAZARO</a></label><img src="icons/menu.png" class="icon-menu" />
+			</div>
+			
+
+			<div class="menu col-md-8">
+				<ul class="nav justify-content-end">
+				    <!--<li class="nav-item">
+				      <a class="nav-link" href="fashion.html">FASHION</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="lifestyle.html">LIFESTYLE</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="personal.html">PERSONAL</a>
+				    </li>-->
+				    <li class="nav-item">
+				      <a class="nav-link" href="#" class="active-link">CONTACT</a>
+				    </li>
+				  </ul>
+		    </div>
+		</nav>
+		<div class="row box-data">
+			<div class="container">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<p>
+						<h4>LIMA:</h4>
+						<a href="mailto:info@lialazaro.com" class="email-link">info@lialazaro.com</a><br>
+						<a href="https://www.instagram.com/lialazaro/" target="_blank" class="email-link">instagram.com/lialazaro</a><br>
+						<b>T:</b>+51 957878711
+					
+					</p>
+					<button class="btn-message">MESSAGE</button>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>	
+
+	</div>
+	
+
+		
+	</div>
+	<div class="small-device-menu">
+		<label><img src="icons/hidemenu.png" class="icon-hidemenu"/></label>
+			      <ul>
+				    <!--<li>
+				      <a  href="fashion.html">FASHION</a>
+				    </li>
+				    <li>
+				      <a href="lifestyle.html">LIFESTYLE</a>
+				    </li>
+				    <li >
+				      <a href="personal.html">PERSONAL</a>
+						</li>-->
+				    <li>
+				      <a  href="index.html" class="active-link">HOME</a>
+				    </li>
+				  </ul>
+	</div>
+
+	<div id="popbox">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<label id="exit-icon">Exit</label>
+				<form class="contact-form" >
+				<h3>Write a Message
+				<label class='error-message'> sorry, an error occurred </label><!--<label class='success-message'> Sent it! </label><span><img src="icons/sentMail.png" class="icon-mail"/></span>--></h3>
+				<p>Please, if you have any questions don't hesitage to write me a message.
+				   I'll be more than happy to contact you as soon as posible.<br>
+				</p>
+				
+					<input type="text" name="fullname" class="form-control" id="fullname" placeholder="Enter your full name" /><br>
+					<input type="text" name="email" class="form-control" id="email" placeholder="Enter your email address" /><br>
+					<textarea name="message" placeholder="You message here.." class="form-control" id="message"></textarea><br>
+		            <input type="button" value="SEND" disabled id="btnmessage">
+				</form>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		
+	</div>
+
+	
+<script src="js/services.js"></script>
+</body>
+</html>

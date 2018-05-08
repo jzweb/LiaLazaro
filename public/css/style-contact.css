@@ -1,0 +1,275 @@
+ @font-face { 
+    font-family: untitle;
+    src: url(../font/UntitledSans-Regular.woff2?v=1.1.0) format('woff2'), 
+    url(..font/UntitledSans-Regular.woff?v=1.1.0) format('woff'), 
+    url(../font/UntitledSans-Regular.ttf?v=1.1.0) format('truetype')
+}
+@font-face {
+    font-family: "Bell MT W02";
+    src: url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=2&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42#iefix");
+    src: url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=2&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42#iefix") format("eot"), url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=14&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42") format("woff2"), url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=3&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42") format("woff"), url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=1&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42") format("truetype"), url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=11&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42#dbf0ec99-099c-467c-8215-b511e936aeb2") format("svg");
+}
+
+h4{font-size: 16px;}
+
+body{
+	 width:100%;
+	 height: 100%;
+	 margin:0;
+	 padding:0;
+	 font-family: "Bell MT W02";
+	 position: absolute;
+}
+.contenedor{
+	
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding: 0;
+	z-index: 1;
+	position: relative;
+	float:left;
+
+
+}
+a{ color: black;
+   text-decoration: none;
+}
+
+a:hover{
+		color: black;
+   		text-decoration: none;
+}
+
+nav{
+	width: 100%;
+	margin:0 0 0 0;
+	padding:20px 0 0 0; 
+	position: absolute;
+	z-index: 3;
+	background-color: transparent;
+	font-size:11px;
+}
+
+.brand{
+	width:40%;
+	float:left;
+	letter-spacing: 0px;
+}
+
+.brand label{font-size: 11px;}
+
+.menu{
+		width:60%;
+		float: right;
+
+}
+
+.nav-link{color:black;
+		  font-size: 12px;
+		  cursor: pointer;
+		  font-size:11px;
+}
+
+.nav-link:hover{ color:#979699;
+	text-decoration: none;
+
+}
+
+
+
+.small-device-menu{
+	width: 50%;
+	height: 88vh;
+	color:black;
+	display: none;
+	float: right;
+	position: relative;
+	padding-left: 2%; 
+	padding-top: 20px;
+	z-index: 5;
+}
+
+
+.icon-menu{
+			width:30px;
+			margin: 0 0 0 20%;
+			display:none;
+			cursor: pointer;
+}
+
+.icon-hidemenu{
+				width:20px;
+				margin: 0;
+				display:none;
+				cursor: pointer;
+				
+
+}
+
+.small-device-menu ul{
+						list-style: none;
+						
+
+}
+.small-device-menu ul li{
+						color: black;
+						
+}
+
+.small-device-menu ul li a{
+						color: black;
+						text-decoration: none;
+						margin-left: 40px;
+						
+}
+
+.small-device-menu ul li a:hover{
+						color: #333333;
+						text-decoration: underline;
+						
+}
+.active-link{
+	         color:red;
+}
+
+.box-data{
+		   padding: 4%;
+		   margin: 100px 0 0 0;
+		   font-size: 12px;
+		   height: 60vh;
+		  
+}
+
+.btn-message{
+			  background-color: black;
+			  color:white;
+			  border: none;
+			  padding: 10px 15px;
+			  cursor: pointer;
+}
+.btn-message:hover{
+			  background-color: #1a1a1a;
+			  color:#f2f2f2;
+			  border: none;
+
+
+}
+.email-link:hover{
+					
+					font-style: italic;
+}
+
+
+.box-footer{
+			padding:0 4%;
+			position: relative;
+			margin: 0;
+			font-size: 10px;
+}
+
+#popbox{
+		position: fixed;
+		width: 80%;
+		margin: 10%;
+		height: auto;
+		background-color: #f2f2f2;
+		border:0.5px transparent white;
+		display: none;
+		z-index: 10;
+		padding-bottom: 3%;
+}
+#btnmessage{
+			  background-color: transparent;
+			  color:black;
+			  border: solid .5px black;
+			  padding: 10px 15px;
+			  cursor: pointer;
+}
+#btnmessage:hover{
+			  background-color: black;
+			  color:white;
+			  border: none;
+			  padding: 10px 15px;
+			  cursor: pointer;
+}
+
+#exit-icon{
+			cursor:pointer;
+			margin-left: 90%;
+			margin-top:50px;
+}
+
+.icon-mail{
+			width:30px;
+}
+
+.contact-form p{
+					font-size: 14px;
+}
+.form-control{
+				border-radius: 2px;
+}
+
+.success-message{
+					color:#4c4c4c;
+					font-size: 18px;
+					display: none;
+					margin-left: 7%;
+}
+.error-message{
+				    color:#fc0107;
+					font-size: 18px;
+					display: none;
+					
+}
+
+@media screen and (max-width:769px){
+
+  .brand{
+			width:100%;
+			float: left;
+			padding-left: 30px;
+		}
+
+	.menu{
+			width:100%;
+	}
+
+	ul{display: initial !important;}
+
+  .menu{display:none;}
+  .icon-menu{display:block;float: right;}
+  .contact-form p{
+					font-size: 11px;
+	}
+  #popbox{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		margin:50px 0 0 0;
+		padding:5%;
+		background-color: white;
+  }
+  #exit-icon{
+			margin-top:5px;
+		}
+  .box-footer{
+			   text-align: center;
+  }
+  
+
+}
+
+@media screen and (max-width:375px){
+
+		#popbox{
+				margin-top: 60px;
+				
+		}
+		#exit-icon{
+			margin-top:5px;
+		}
+
+		
+}

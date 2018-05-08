@@ -1,0 +1,214 @@
+
+@font-face {
+    font-family: untitle;
+    src: url(../font/UntitledSans-Regular.woff2?v=1.1.0) format('woff2'), 
+    url(..font/UntitledSans-Regular.woff?v=1.1.0) format('woff'), 
+    url(../font/UntitledSans-Regular.ttf?v=1.1.0) format('truetype')
+}
+@font-face {
+    font-family: "Bell MT W02";
+    src: url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=2&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42#iefix");
+    src: url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=2&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42#iefix") format("eot"), url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=14&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42") format("woff2"), url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=3&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42") format("woff"), url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=1&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42") format("truetype"), url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=11&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42#dbf0ec99-099c-467c-8215-b511e936aeb2") format("svg");
+}
+
+body{
+	 width:100%;
+	 height: 100%;
+	 margin:0;
+	 padding:0;
+	 font-family: "Bell MT W02";
+	 position: absolute;
+}
+
+a{ color: black;
+   text-decoration: none;
+}
+
+a:hover{
+		color: black;
+   		text-decoration: none;
+}
+#loading{
+		   position: absolute; width: 100%; height: 100%;
+		   background: url('../icons/loading.gif') no-repeat center center;
+		   
+}
+.contenedor{
+	
+	width: 100%;
+	height: 100vh;
+	margin:0;
+	padding: 0;
+	z-index: 1;
+	position: absolute;
+	
+
+}
+
+nav{
+	width: 100%;
+	margin:0 0 0 0;
+	padding:20px 0 0 0; 
+	position: absolute;
+	z-index: 3;
+	background-color: transparent;
+	font-size:11px;
+}
+
+.brand{
+		width:40%;
+		float:left;
+		letter-spacing: 0px;
+}
+
+.brand label{font-size:11px;}
+
+.menu{
+		width:60%;
+		float: right;
+}
+
+.nav-link{color:black;
+		  font-size: 11px;
+		  cursor: pointer;
+}
+
+.nav-link:hover{ opacity: .5;
+				 text-decoration: none;
+
+}
+
+.carousel-fade .carousel-item {
+	display: block;
+	position: absolute;
+	opacity: 0;
+	transition: opacity .75s ease-in-out;
+	}
+	.carousel-fade .carousel-item.active {
+	opacity: 1;
+	}
+
+	html,
+	body,
+	.carousel,
+	.carousel-inner,
+	.carousel-item {
+	width: 100%;
+	height: 100%;
+	}
+
+	.carousel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+
+	.carousel-item:nth-child(1) {
+		width: 100%;
+		height: 100vh;
+		background-image: url(../pictures/1.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position:50% 0;
+	}
+	.carousel-item:nth-child(2) {
+		width: 100%;
+		height: 100vh;
+		background-image: url(../pictures/2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top top;
+	}
+	.carousel-item:nth-child(3) {
+		width: 100%;
+		height: 100vh;
+		background-image: url(../pictures/3.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position:50% 0;
+	}
+	.carousel-item:nth-child(4) {
+		width: 100%;
+		height: 100vh;
+		background-image: url(../pictures/4.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: left center;
+	}
+	.carousel-item:nth-child(5) {
+		width: 100%;
+		height: 100vh;
+		background-image: url(../pictures/5.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 66% center;
+	}
+	.carousel-item:nth-child(6) {
+		width: 100%;
+		height: 100vh;
+		background-image: url(../pictures/6.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: left center;
+	}
+	.carousel-item:nth-child(7) {
+		width: 100%;
+		height: 100vh;
+		background-image: url(../pictures/7.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: right center;
+	}
+	.carousel-item:nth-child(8) {
+		width: 100%;
+		height: 100vh;
+		background-image: url(../pictures/8.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 66% top;
+	}
+	.carousel-item:nth-child(9) {
+		width: 100%;
+		height: 100vh;
+		background-image: url(../pictures/9.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center top;
+	}
+
+
+
+
+@media screen and (max-width:769px){
+    
+	
+	.brand{
+			width:100%;
+			padding-left: 30px;
+	}
+
+	.menu{
+			width:100%;
+	}
+
+	ul{display: initial !important;}
+
+	.carousel-item:nth-child(2) {
+		width: 100%;
+		height: 100vh;
+		background-image: url(../pictures/2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position:65% center;
+	}
+    
+	.carousel-item:nth-child(8) {
+		width: 100%;
+		height: 100vh;
+		background-image: url(../pictures/8.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top -100px;
+		}
+
+}
