@@ -52,7 +52,7 @@ nav{
 		float:left;
 }
 
-.brand label{font-size: 20px;}
+.brand label{font-size: 11px;}
 
 .menu{
 		width:60%;
@@ -60,7 +60,7 @@ nav{
 }
 
 .nav-link{color:black;
-		  font-size: 12px;
+		  font-size: 11px;
 		  cursor: pointer;
 }
 

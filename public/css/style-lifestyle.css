@@ -10,6 +10,7 @@
     src: url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=2&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42#iefix") format("eot"), url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=14&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42") format("woff2"), url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=3&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42") format("woff"), url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=1&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42") format("truetype"), url("https://api2.fonts.com/FontSubsetter.ashx?d44f19a684109620e4841579a490e8186e8fa16578fa1f3a6d587f7fd9c13480fa52c93a04a6e8265b735d5928b3b8ba09e3ccea543dda5ea5875835f3166e2b3b475246cbb4dafd0be50880872aeba0d0850f1b018ab7dda4dc833f06abc9bba2f0b13e77f8f1&fctypeId=11&fcId=dbf0ec99-099c-467c-8215-b511e936aeb2&languages=en,fi,fr,de,pt,es&ot=false&projectId=c1f86875-7b99-426d-869b-99665097ee42#dbf0ec99-099c-467c-8215-b511e936aeb2") format("svg");
 }
 
+img{pointer-events: none;}
 body{
 	 width:100%;
 	 height: 100%;
@@ -53,7 +54,7 @@ nav{
 		float:left;
 }
 
-.brand label{font-size: 20px;}
+.brand label{font-size: 11px;}
 
 .menu{
 		width:60%;
@@ -62,7 +63,7 @@ nav{
 }
 
 .nav-link{color:black;
-		  font-size: 12px;
+		  font-size: 11px;
 		  cursor: pointer;
 }
 
@@ -119,11 +120,12 @@ nav{
 
 .small-device-menu ul li a:hover{
 						color: #333333;
-						text-decoration: underline;
+						text-decoration:line-through;
 						
 }
-.active-link{
-	         color:red;
+
+#box-small{
+	display: none;
 }
 
 .box-images{
@@ -144,21 +146,116 @@ nav{
 }
 
 
-#img1{
-		margin-left:-120px;
-}
-#img2{
-	  margin-top: 200px;
-}
-#img3{}
-
-.box-footer{
-			padding:0 4%;
-			position: relative;
-			margin: 0;
-			font-size: 10px;
+.swiper-container{
+	width:100%;
+	height: 70vh;
+	margin-top:70px;
+	padding: 0;
+	margin-bottom: 0;
+			  
 }
 
+.swiper-button-prev {
+background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+margin-left:15px;
+}
+
+.swiper-button-next {
+background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+margin-right:15px;
+}
+
+#image1{
+		width:80%;
+		height: auto;
+		margin-top: 55px;
+}
+
+#image2{
+		width:100%;
+		height: auto;
+
+}
+
+#image3{
+		width:260px;
+		height: auto;
+		margin-top: 60px;
+
+	
+}
+
+#image4{
+		width:280px;
+		height: auto;
+		margin-top: 50px;
+
+}
+#image5{
+		width:260px;
+		height: auto;
+		margin-top: 60px;
+
+}
+#image6{
+	width:250px;
+	height: auto;
+	margin-top: 20px;
+	margin-left: -355px;
+}
+#image7{
+	width:520px;
+	height: auto;
+	margin-top: 35px;
+}
+
+@media screen and (max-width: 1024px){
+	.swiper-button-prev{display: none;} 
+	.swiper-button-next{display: none;}
+	#image1{
+			width:200px;
+			height:auto ;
+			margin-top: 50px;
+		
+	}
+
+	#image2{
+			
+			width:280px;
+			height:auto ;
+	}
+	#image3{
+		width:200px;
+		height: auto;
+		margin-top: 40px;
+	
+		
+	}
+
+	#image4{
+		width:220px;
+		height: auto;
+		margin-top: 30px;
+	
+	}
+	#image5{
+		width:200px;
+		height: auto;
+		margin-top: 40px;
+	
+	}
+	#image6{
+		width:150px;
+		height: auto;
+		margin-top: 20px;
+		margin-left: -355px;
+	}
+	#image7{
+		width:450px;
+		height: auto;
+		margin-top: 35px;
+	}
+}
 
 @media screen and (max-width:769px){
 
@@ -182,6 +279,93 @@ nav{
 	  }
 
 	#img1, #img2, .img3{margin:0;}
-  
+	#box-small{
+		display: none;
+	}
+	.swiper-button-prev{display: none;} 
+	.swiper-button-next{display: none;}
 
+	#image1{
+		
+		width:120px;
+		height:auto ;
+		margin-top: 30px;
+		
+	}
+
+	#image2{
+	
+		width:150px;
+		height:auto ;
+	}
+	#image3{
+		width:120px;
+		height: auto;
+		margin-top: 35px;
+		
+	}
+
+	#image4{
+		width:150px;
+		height: auto;
+		margin-top: 20px;
+	}
+	#image5{
+		width:120px;
+		height: auto;
+		margin-top: 35px;
+	}
+	#image6{
+		width:150px;
+		height: auto;
+		margin-top: 20px;
+		margin-left: -145px;
+	}
+	#image7{
+		width:210px;
+		height: auto;
+		margin-top: 35px;
+	}
+
+}
+@media screen and (max-width:414px){
+	#box-small{ width:100%;
+		        margin:0;
+				display: block;
+				margin-top:35vh;
+	}
+	.swiper-container{
+		display: none;
+	}
+	.swiper-button-prev{display: none;} 
+	.swiper-button-next{display: none;}
+	
+	#image1{
+		width:100%;
+		height: 100px;
+		
+	}
+
+	#image2{
+		width:100%;
+		height: 100px;
+	
+	}
+	#image3{
+		width:130px;
+		height: auto;
+		
+		
+	}
+
+	#image4{
+		width:150px;
+		height: auto;
+		
+	}
+	#image5{
+		width:130px;
+		height: auto;
+		
+	}
 }

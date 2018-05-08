@@ -11,6 +11,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style-lifestyle.css">
 	<script src="js/functions.js"></script>
 
@@ -20,73 +22,75 @@
 
 	<div class="contenedor">
 
-		<nav>
-			<div class="brand col-md-4">
-				<label><a href="index.html">LIA LAZARO</a></label><img src="icons/menu.png" class="icon-menu" />
+			<nav>
+				<div class="brand col-md-4">
+					<label><a href="index.html">LIA LAZARO</a></label><img src="icons/menu.png" class="icon-menu" />
+				</div>
+				
+
+				<div class="menu col-md-8">
+					<ul class="nav justify-content-end">
+						<!-- <li class="nav-item">
+								<a class="nav-link" href="fashion.html">FASHION</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="lifestyle.html">LIFESTYLE</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="personal.html">PERSONAL</a>
+							</li>-->
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html" class="active-link">CONTACT</a>
+							</li>
+						</ul>
+					</div>
+			</nav>
+			<div class="row" id="box-small">
+				<div class="container">
+						<p>
+								<center>This website is best viewed in landscape, please rotate your device to continue.<br><br>
+												Swipe rigth or left to nevigate through the website.<br><br>
+												www.lialazaro.com
+								</center>
+						</p>
+				</div>
+			</div>
+
+			<!-- Slider main container -->
+			<div class="swiper-container">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="row">
+								<div class="col-md-1"><div class="swiper-button-prev"></div></div>
+								<div class="col-md-5 col-sm-6"><center><img src="pictures/lifestyle/crepier1.jpg" id="image1"/></center></div>
+								<div class="col-md-5 col-sm-6"><center><img src="pictures/lifestyle/crepier2.jpg" id="image2"/></center></div>
+								<div class="col-md-1"><div class="swiper-button-next"></div></div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+								<div class="row">
+									<div class="col-md-1"><div class="swiper-button-prev"></div></div>
+									<div class="col-md-3 col-sm-4"><center><img src="pictures/lifestyle/morada1.jpg" id="image3"/></center></div>
+									<div class="col-md-4 col-sm-4"><center><img src="pictures/lifestyle/morada2.jpg" id="image4"/></center></div>
+									<div class="col-md-3 col-sm-4"><center><img src="pictures/lifestyle/morada3.jpg" id="image5"/></center></div>
+									<div class="col-md-1"><div class="swiper-button-next"></div></div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+									<div class="row">
+										<div class="col-md-1"><div class="swiper-button-prev"></div></div>
+										<div class="col-md-5 col-sm-6"><center><img src="pictures/lifestyle/basement1.jpg" id="image6"/></center></div>
+										<div class="col-md-5 col-sm-6"><center><img src="pictures/lifestyle/basement2.jpg" id="image7"/></center></div>
+										<div class="col-md-1"><div class="swiper-button-next"></div></div>
+									</div>
+								</div>
+						
+				</div>
+		
 			</div>
 			
-
-			<div class="menu col-md-8">
-				<ul class="nav justify-content-end">
-				   <!-- <li class="nav-item">
-				      <a class="nav-link" href="fashion.html">FASHION</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="lifestyle.html">LIFESTYLE</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="personal.html">PERSONAL</a>
-				    </li>-->
-				    <li class="nav-item">
-				      <a class="nav-link" href="contact.html" class="active-link">CONTACT</a>
-				    </li>
-				  </ul>
-		    </div>
-		</nav>
-		<div class="row box-images">
-			    <div class="col-md-3"></div>
-				<div class="col-md-6">
-					<div class="image">
-						<img src="./pictures/personal2.jpg" alt="" class="pictures" id="img3">
-						<label><b>PICTURE</b> something</label>
-					</div>
-				</div>
-				<div class="col-md-3"></div>
-
-				<div class="col-md-2"></div>
-				<div class="col-md-4">
-					<div class="image">
-						<img src="./pictures/personal1.jpg" alt="" class="pictures" id="img1">
-						<label><b>PICTURE</b> something</label>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="image">
-						<img src="./pictures/personal3.jpg" alt="" class="pictures" id="img2">
-						<label><b>PICTURE</b> something</label>
-					</div>
-				</div>
-				<div class="col-md-2"></div>
-			
-			
-			
-
-		</div>	
-	
-		<!--<div class="row box-footer">
-			<div class="col-md-2"></div>
-			<div class="col-md-10">
-					<p>All Images &copy; LIA LAZARO 2018<br>
-					   Design by JORGE ZEVALLOS
-					</p>
-
-
-			</div>	
-		</div>-->
-		
-	</div>
-	
-
 		
 	</div>
 	<div class="small-device-menu">
@@ -100,15 +104,17 @@
 				    </li>
 				    <li >
 				      <a href="personal.html" class="active-link">PERSONAL</a>
-				    </li>-->s
+				    </li>-->
 				    <li >
 				      <a  href="contact.html" >CONTACT</a>
 				    </li>
 				  </ul>
 	</div>
-
-
-	
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.esm.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.esm.bundle.js"></script>
+	<script src="js/swiper.js"></script>
 
 </body>
 </html>

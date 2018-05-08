@@ -126,7 +126,7 @@ nav{
 
 .small-device-menu ul li a:hover{
 						color: #333333;
-						text-decoration: underline;
+						text-decoration: line-through;
 						
 }
 .active-link{
