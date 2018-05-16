@@ -115,27 +115,27 @@ nav{
 
 }
 .small-device-menu ul li{
-						color: black;
+						color: #979699;
 						display: block;
 						
 }
 
 .small-device-menu ul li a{
-						color: black;
+						
 						text-decoration: none;
 						margin-left: 40px;
 						
 }
 
 .small-device-menu ul li a:hover{
-						color: #333333;
-						text-decoration: line-through;
+						color: black;
 						font-size: 11px;
 						opacity: .5;
 						
 }
-.active-link{
-	         color:red;
+
+.active-link{color:#979699;
+			 cursor:cell;
 }
 
 .box-data{
